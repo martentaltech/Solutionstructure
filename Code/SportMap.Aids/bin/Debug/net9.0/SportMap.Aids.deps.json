@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "SportMap.Aids/1.0.0": {
+        "runtime": {
+          "SportMap.Aids.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SportMap.Aids/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

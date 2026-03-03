@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/scopedcss/projectbundle/SportMap.Movie.bundle.scp.css",
+      "PackagePath": "staticwebassets/SportMap.Movie.5jy4bj1bp2.bundle.scp.css"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.SportMap.Movie.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.SportMap.Movie.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.SportMap.Movie.props",
+      "PackagePath": "build\\SportMap.Movie.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.SportMap.Movie.props",
+      "PackagePath": "buildMultiTargeting\\SportMap.Movie.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.SportMap.Movie.props",
+      "PackagePath": "buildTransitive\\SportMap.Movie.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

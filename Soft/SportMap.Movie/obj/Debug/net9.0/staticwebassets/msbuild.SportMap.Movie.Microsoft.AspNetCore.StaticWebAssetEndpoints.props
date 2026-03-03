@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/SportMap.Movie/SportMap.Movie.5jy4bj1bp2.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SportMap.Movie.5jy4bj1bp2.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5jy4bj1bp2"},{"Name":"integrity","Value":"sha256-0W7kTfHtY6Z4\u002BCAWbYOYtuxmlOj/JRTYwlS4vtQrTwM="},{"Name":"label","Value":"_content/SportMap.Movie/SportMap.Movie.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"161"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220W7kTfHtY6Z4\u002BCAWbYOYtuxmlOj/JRTYwlS4vtQrTwM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 03 Mar 2026 20:08:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SportMap.Movie/SportMap.Movie.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SportMap.Movie.5jy4bj1bp2.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0W7kTfHtY6Z4\u002BCAWbYOYtuxmlOj/JRTYwlS4vtQrTwM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"161"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220W7kTfHtY6Z4\u002BCAWbYOYtuxmlOj/JRTYwlS4vtQrTwM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 03 Mar 2026 20:08:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/bin/Debug/net9.0/SportMap.Domain.deps.json
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/bin/Debug/net9.0/SportMap.Domain.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/bin/Debug/net9.0/SportMap.Domain.pdb
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/SportMap.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/SportMap.Domain.AssemblyInfoInputs.cache
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/SportMap.Domain.AssemblyInfo.cs
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/SportMap.Domain.csproj.CoreCompileInputs.cache
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/SportMap.Domain.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/refint/SportMap.Domain.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/SportMap.Domain.pdb
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/ref/SportMap.Domain.dll

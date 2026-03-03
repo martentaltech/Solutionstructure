@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/SportMap.Todo.props" />
+</Project>
