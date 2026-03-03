@@ -9,3 +9,4 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/refint/SportMap.Domain.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/SportMap.Domain.pdb
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/ref/SportMap.Domain.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/obj/Debug/net9.0/SportMap.Domain.sourcelink.json

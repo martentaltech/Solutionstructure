@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SportMap.Movie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+beebc26943de80e3be97bcb571d43e0a52b1acbd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SportMap.Movie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SportMap.Movie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

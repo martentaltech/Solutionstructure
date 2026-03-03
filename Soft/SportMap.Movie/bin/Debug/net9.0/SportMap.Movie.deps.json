@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore": "9.0.2",
           "SportMap.Data": "1.0.0",
           "SportMap.Domain": "1.0.0",
-          "SportMap.Infra": "1.0.0"
+          "SportMap.Infra": "1.0.0",
+          "SportMap.Shared": "1.0.0"
         },
         "runtime": {
           "SportMap.Movie.dll": {}
@@ -472,6 +473,17 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "SportMap.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "9.0.8"
+        },
+        "runtime": {
+          "SportMap.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -716,6 +728,11 @@
       "sha512": ""
     },
     "SportMap.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SportMap.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

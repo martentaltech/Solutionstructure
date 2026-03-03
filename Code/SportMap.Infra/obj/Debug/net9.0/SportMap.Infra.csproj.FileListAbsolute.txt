@@ -15,3 +15,4 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Infra/obj/Debug/net9.0/refint/SportMap.Infra.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Infra/obj/Debug/net9.0/SportMap.Infra.pdb
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Infra/obj/Debug/net9.0/ref/SportMap.Infra.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Infra/obj/Debug/net9.0/SportMap.Infra.sourcelink.json

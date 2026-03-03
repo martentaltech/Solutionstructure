@@ -23,7 +23,6 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/scopedcss/projectbundle/SportMap.Movie.bundle.scp.css
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/compressed/unlu0xluo6-eu7w3d5g1a.gz
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/compressed/3gin1ph7ub-25o87uqmvr.gz
-/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/compressed/ljiry2d17b-s94f9uirrj.gz
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/compressed/ksy9ze1h6n-5jy4bj1bp2.gz
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/staticwebassets.build.json
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/staticwebassets.build.json.cache
@@ -40,3 +39,9 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/refint/SportMap.Movie.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/SportMap.Movie.pdb
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/ref/SportMap.Movie.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/SportMap.Movie.sourcelink.json
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/bin/Debug/net9.0/SportMap.Shared.staticwebassets.runtime.json
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/bin/Debug/net9.0/SportMap.Shared.staticwebassets.endpoints.json
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/bin/Debug/net9.0/SportMap.Shared.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/bin/Debug/net9.0/SportMap.Shared.pdb
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/compressed/ljiry2d17b-335br75c3d.gz

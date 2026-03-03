@@ -210,8 +210,6 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/o1z1kilt3n-63fj8s7r0e.gz
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/u075iy7lw7-0j3bgjxly4.gz
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/3gin1ph7ub-25o87uqmvr.gz
-/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/t11yl2fyn1-p3bocqgj3u.gz
-/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/8yo5hbkp79-v8mb844f0d.gz
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/staticwebassets.build.json
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/staticwebassets.build.json.cache
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/staticwebassets.development.json
@@ -222,3 +220,10 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/SportMap.Web.pdb
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/SportMap.Web.genruntimeconfig.cache
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/ref/SportMap.Web.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/bin/Debug/net9.0/SportMap.Shared.staticwebassets.runtime.json
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/bin/Debug/net9.0/SportMap.Shared.staticwebassets.endpoints.json
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/bin/Debug/net9.0/SportMap.Shared.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/bin/Debug/net9.0/SportMap.Shared.pdb
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/SportMap.Web.sourcelink.json
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/t11yl2fyn1-1krfpya78j.gz
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/8yo5hbkp79-0gqggup4vd.gz

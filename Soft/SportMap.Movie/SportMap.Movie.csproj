@@ -21,6 +21,7 @@
     <ProjectReference Include="..\..\Code\SportMap.Data\SportMap.Data.csproj" />
     <ProjectReference Include="..\..\Code\SportMap.Domain\SportMap.Domain.csproj" />
     <ProjectReference Include="..\..\Code\SportMap.Infra\SportMap.Infra.csproj" />
+    <ProjectReference Include="..\..\Shared\SportMap.Shared\SportMap.Shared.csproj" />
   </ItemGroup>
 
 </Project>

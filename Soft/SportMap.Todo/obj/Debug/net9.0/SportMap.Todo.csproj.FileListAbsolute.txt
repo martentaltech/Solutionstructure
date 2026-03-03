@@ -31,3 +31,4 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Todo/obj/Debug/net9.0/refint/SportMap.Todo.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Todo/obj/Debug/net9.0/SportMap.Todo.pdb
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Todo/obj/Debug/net9.0/ref/SportMap.Todo.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Todo/obj/Debug/net9.0/SportMap.Todo.sourcelink.json

@@ -13,3 +13,4 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/refint/SportMap.Data.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.pdb
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/ref/SportMap.Data.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.sourcelink.json

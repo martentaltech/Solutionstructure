@@ -5,6 +5,7 @@
     <ProjectReference Include="..\SportMap.Todo\SportMap.Todo.csproj" />
     <ProjectReference Include="..\..\Code\SportMap.Infra\SportMap.Infra.csproj" />
     <ProjectReference Include="..\..\Code\SportMap.Data\SportMap.Data.csproj" />
+    <ProjectReference Include="..\..\Shared\SportMap.Shared\SportMap.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
