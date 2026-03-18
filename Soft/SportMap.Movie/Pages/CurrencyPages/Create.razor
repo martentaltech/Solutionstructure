@@ -1,0 +1,46 @@
+@page "/currencies/create"
+@attribute [ExcludeFromInteractiveRouting]
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<SportMapDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Create Currency</PageTitle>
+
+<h1>Create</h1>
+
+<h2>Currency</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm method="post" Model="Currency" OnValidSubmit="AddCurrency" FormName="create" Enhance>
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" role="alert"/>
+            <MyPropertyEditor TValue="string" Id="name" Label="Name:" @bind-Value="Currency.Name" />
+            <MyPropertyEditor TValue="string" Id="code" Label="Code:" @bind-Value="Currency.Code" />
+            <MyPropertyEditor TValue="string" Id="numericcode" Label="NumericCode:" @bind-Value="Currency.NumericCode" />
+            <MyPropertyEditor TValue="string" Id="majorunitsymbol" Label="MajorUnitSymbol:" @bind-Value="Currency.MajorUnitSymbol" />
+            <MyPropertyEditor TValue="string" Id="minorunitsymbol" Label="MinorUnitSymbol:" @bind-Value="Currency.MinorUnitSymbol" />
+            <MyPropertyEditor TValue="double" Id="ratioofminorunit" Label="RatioOfMinorUnit:" @bind-Value="Currency.RatioOfMinorUnit" />
+            <button type="submit" class="btn btn-primary">Create</button>
+        </EditForm>
+    </div>
+</div>
+
+<div>
+    <a href="/currencies">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    private Currency Currency { get; set; } = default!;
+
+    protected override void OnInitialized() => Currency ??= new();
+
+    private async Task AddCurrency()
+    {
+        using var context = DbFactory.CreateDbContext();
+        context.Currencies.Add(Currency);
+        await context.SaveChangesAsync();
+        NavigationManager.NavigateTo("/currencies");
+    }
+}

@@ -1,14 +1,10 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/bin/Debug/net9.0/SportMap.Data.deps.json
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/bin/Debug/net9.0/SportMap.Data.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/bin/Debug/net9.0/SportMap.Data.pdb
-/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/bin/Debug/net9.0/SportMap.Domain.dll
-/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/bin/Debug/net9.0/SportMap.Domain.pdb
-/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.csproj.AssemblyReference.cache
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.GeneratedMSBuildEditorConfig.editorconfig
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.AssemblyInfoInputs.cache
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.AssemblyInfo.cs
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.csproj.CoreCompileInputs.cache
-/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.9FEDD681.Up2Date
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/refint/SportMap.Data.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Data/obj/Debug/net9.0/SportMap.Data.pdb

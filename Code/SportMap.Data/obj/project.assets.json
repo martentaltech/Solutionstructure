@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {
-      "SportMap.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/SportMap.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SportMap.Domain.dll": {}
-        }
-      }
-    }
+    "net9.0": {}
   },
-  "libraries": {
-    "SportMap.Domain/1.0.0": {
-      "type": "project",
-      "path": "../SportMap.Domain/SportMap.Domain.csproj",
-      "msbuildProject": "../SportMap.Domain/SportMap.Domain.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": [
-      "SportMap.Domain >= 1.0.0"
-    ]
+    "net9.0": []
   },
   "packageFolders": {
     "/Users/martentsimolonskas/.nuget/packages/": {}
@@ -50,11 +31,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/SportMap.Domain.csproj": {
-              "projectPath": "/Users/martentsimolonskas/Desktop/SportMap_Uus/Code/SportMap.Domain/SportMap.Domain.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

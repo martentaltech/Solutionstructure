@@ -4,20 +4,19 @@
 <div class="mb-3">
     <label for="@Id" class="form-label">@Label</label>
     @if (IsString) {
-        <InputText id="@Id" class="form-control" Value="@StringValue" 
+        <InputText id="@Id" class="form-control" Value="@StringValue"
            ValueChanged="@OnStringValueChanged" ValueExpression="@StringValueExpression" />
     } else if (IsDate) {
-        <InputDate TValue="TValue" id="@Id" class="form-control" Value="@Value" 
+        <InputDate TValue="TValue" id="@Id" class="form-control" Value="@Value"
             ValueChanged="@ValueChanged" ValueExpression="@ValueExpression" />
     } else {
-        <InputNumber TValue="TValue" id="@Id" class="form-control" Value="@Value" 
+        <InputNumber TValue="TValue" id="@Id" class="form-control" Value="@Value"
             ValueChanged="@ValueChanged" ValueExpression="@ValueExpression" />
     }
     <ValidationMessage For="@ValueExpression" class="text-danger" />
 </div>
 
 @code {
-    @code {
     [Parameter] public string Id { get; set; } = string.Empty;
     [Parameter] public string Label { get; set; } = string.Empty;
     [Parameter] public TValue? Value { get; set; }
@@ -33,5 +32,4 @@
         return ValueChanged.InvokeAsync((TValue)(object)value);
     }
     private Expression<Func<string>>? StringValueExpression => ValueExpression as Expression<Func<string>>;
-}
 }

@@ -1,0 +1,39 @@
+@page "/currencies"
+@attribute [ExcludeFromInteractiveRouting]
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using Microsoft.EntityFrameworkCore
+@implements IAsyncDisposable
+@inject IDbContextFactory<SportMapDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Currencies</PageTitle>
+
+<h1>Currencies</h1>
+
+<p>
+    <a href="currencies/create">Create New</a>
+</p>
+
+<QuickGrid Class="table" Items="context.Currencies">
+    <PropertyColumn Property="currency => currency.Name" />
+    <PropertyColumn Property="currency => currency.Code" />
+    <PropertyColumn Property="currency => currency.MajorUnitSymbol" />
+    <PropertyColumn Property="currency => currency.NumericCode" />
+
+    <TemplateColumn Context="currency">
+        <a href="@($"currencies/edit?id={currency.Id}")">Edit</a> |
+        <a href="@($"currencies/details?id={currency.Id}")">Details</a> |
+        <a href="@($"currencies/delete?id={currency.Id}")">Delete</a>
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+    private SportMapDbContext context = default!;
+
+    protected override void OnInitialized()
+    {
+        context = DbFactory.CreateDbContext();
+    }
+
+    public async ValueTask DisposeAsync() => await context.DisposeAsync();
+}

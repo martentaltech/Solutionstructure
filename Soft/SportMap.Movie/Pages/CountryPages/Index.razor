@@ -1,0 +1,39 @@
+@page "/countries"
+@attribute [ExcludeFromInteractiveRouting]
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using Microsoft.EntityFrameworkCore
+@implements IAsyncDisposable
+@inject IDbContextFactory<SportMapDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Countries</PageTitle>
+
+<h1>Countries</h1>
+
+<p>
+    <a href="countries/create">Create New</a>
+</p>
+
+<QuickGrid Class="table" Items="context.Countries">
+    <PropertyColumn Property="country => country.Name" />
+    <PropertyColumn Property="country => country.Code" />
+    <PropertyColumn Property="country => country.IsoCode" />
+    <PropertyColumn Property="country => country.OfficialName" />
+
+    <TemplateColumn Context="country">
+        <a href="@($"countries/edit?id={country.Id}")">Edit</a> |
+        <a href="@($"countries/details?id={country.Id}")">Details</a> |
+        <a href="@($"countries/delete?id={country.Id}")">Delete</a>
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+    private SportMapDbContext context = default!;
+
+    protected override void OnInitialized()
+    {
+        context = DbFactory.CreateDbContext();
+    }
+
+    public async ValueTask DisposeAsync() => await context.DisposeAsync();
+}

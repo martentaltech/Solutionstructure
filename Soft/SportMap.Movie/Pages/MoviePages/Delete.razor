@@ -1,4 +1,5 @@
 @page "/movies/delete"
+@attribute [ExcludeFromInteractiveRouting]
 @using Microsoft.EntityFrameworkCore
 @inject IDbContextFactory<SportMapDbContext> DbFactory
 @inject NavigationManager NavigationManager
@@ -16,12 +17,7 @@
         <p><em>Loading...</em></p>
     }
     else {
-        <div>
-            <MyViewItem Label="Title" Value="@movie.Title" />
-            <MyViewItem Label="Release Date" Value="@movie.ReleaseDate.ToString()" />
-            <MyViewItem Label="Genre" Value="@movie.Genre" />
-            <MyViewItem Label="Price" Value="@movie.Price.ToString()" />
-        </div>
+        <MyEntityViewer Entity="movie" />
 
         <EditForm method="post" Model="movie" OnValidSubmit="DeleteMovie" FormName="delete" Enhance>
             <button type="submit" class="btn btn-danger" disabled="@(movie is null)">Delete</button> |

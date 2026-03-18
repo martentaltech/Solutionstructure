@@ -12,4 +12,6 @@ public class SportMapDbContext : DbContext
 
     public DbSet<Movie> Movies { get; set; } = default!;
     public DbSet<TodoItem> TodoItems { get; set; } = default!;
+    public DbSet<Country> Countries { get; set; } = default!;
+    public DbSet<Currency> Currencies { get; set; } = default!;
 }

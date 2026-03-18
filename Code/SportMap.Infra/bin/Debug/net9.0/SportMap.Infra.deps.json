@@ -348,9 +348,6 @@
       "System.Memory/4.5.3": {},
       "System.Text.Json/9.0.2": {},
       "SportMap.Data/1.0.0": {
-        "dependencies": {
-          "SportMap.Domain": "1.0.0"
-        },
         "runtime": {
           "SportMap.Data.dll": {
             "assemblyVersion": "1.0.0.0",

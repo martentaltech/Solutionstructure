@@ -864,9 +864,6 @@
       "System.Text.Json/9.0.2": {},
       "System.Threading.Channels/7.0.0": {},
       "SportMap.Data/1.0.0": {
-        "dependencies": {
-          "SportMap.Domain": "1.0.0"
-        },
         "runtime": {
           "SportMap.Data.dll": {
             "assemblyVersion": "1.0.0.0",

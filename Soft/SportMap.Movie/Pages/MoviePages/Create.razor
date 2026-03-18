@@ -1,4 +1,5 @@
 @page "/movies/create"
+@attribute [ExcludeFromInteractiveRouting]
 @using Microsoft.EntityFrameworkCore
 @inject IDbContextFactory<SportMapDbContext> DbFactory
 @inject NavigationManager NavigationManager
@@ -14,36 +15,11 @@
         <EditForm method="post" Model="Movie" OnValidSubmit="AddMovie" FormName="create" Enhance>
             <DataAnnotationsValidator />
             <ValidationSummary class="text-danger" role="alert"/>
-            <div class="mb-3">
-                <label for="title" class="form-label">Title:</label> 
-                <InputText id="title" @bind-Value="Movie.Title" class="form-control" /> 
-                <ValidationMessage For="() => Movie.Title" class="text-danger" /> 
-            </div>        
-            <div class="mb-3">
-                <label for="releasedate" class="form-label">Release Date:</label>
-                <InputDate id="releasedate" @bind-Value="Movie.ReleaseDate" class="form-control" /> 
-                <ValidationMessage For="() => Movie.ReleaseDate" class="text-danger" /> 
-            </div>        
-            <div class="mb-3">
-                <label for="genre" class="form-label">Genre:</label> 
-                <InputText id="genre" @bind-Value="Movie.Genre" class="form-control" /> 
-                <ValidationMessage For="() => Movie.Genre" class="text-danger" /> 
-            </div>        
-            <div class="mb-3">
-                <label for="price" class="form-label">Price:</label> 
-                <InputNumber id="price" @bind-Value="Movie.Price" class="form-control" /> 
-                <ValidationMessage For="() => Movie.Price" class="text-danger" /> 
-            </div>        
-            <div class="mb-3">
-                <label for="rating" class="form-label">Rating:</label> 
-                <InputText id="rating" @bind-Value="Movie.Rating" class="form-control" /> 
-                <ValidationMessage For="() => Movie.Rating" class="text-danger" /> 
-            </div>
+            <MyPropertyEditor TValue="string" Id="title" Label="Title:" @bind-Value="Movie.Title" />
+            <MyPropertyEditor TValue="DateOnly" Id="releasedate" Label="ReleaseDate:" @bind-Value="Movie.ReleaseDate" />
+            <MyPropertyEditor TValue="string" Id="genre" Label="Genre:" @bind-Value="Movie.Genre" />
+            <MyPropertyEditor TValue="decimal" Id="price" Label="Price:" @bind-Value="Movie.Price" />
             <button type="submit" class="btn btn-primary">Create</button>
-            <dl class="row">
-                <dt class="col-sm-2">Rating</dt>
-                <dd class="col-sm-10">@Movie.Rating</dd>
-            </dl>
         </EditForm>
     </div>
 </div>
@@ -58,7 +34,8 @@
 
     protected override void OnInitialized() => Movie ??= new();
 
-    // To protect from overposting attacks, see https://learn.microsoft.com/aspnet/core/blazor/forms/#mitigate-overposting-attacks.
+    // To protect from overposting attacks,
+    // see https://learn.microsoft.com/aspnet/core/blazor/forms/#mitigate-overposting-attacks.
     private async Task AddMovie()
     {
         using var context = DbFactory.CreateDbContext();

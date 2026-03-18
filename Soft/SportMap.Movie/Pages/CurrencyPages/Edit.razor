@@ -1,0 +1,88 @@
+@page "/currencies/edit"
+@attribute [ExcludeFromInteractiveRouting]
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<SportMapDbContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Edit Currency</PageTitle>
+
+<h1>Edit</h1>
+
+<h2>Currency</h2>
+<hr />
+@if (Currency is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm method="post" Model="Currency" OnValidSubmit="UpdateCurrency" FormName="edit" Enhance>
+                <DataAnnotationsValidator />
+                <ValidationSummary role="alert"/>
+                <input type="hidden" name="Currency.Id" value="@Currency.Id" />
+                <MyPropertyEditor TValue="string" Id="name" Label="Name:" @bind-Value="Currency.Name" />
+                <MyPropertyEditor TValue="string" Id="code" Label="Code:" @bind-Value="Currency.Code" />
+                <MyPropertyEditor TValue="string" Id="numericcode" Label="NumericCode:" @bind-Value="Currency.NumericCode" />
+                <MyPropertyEditor TValue="string" Id="majorunitsymbol" Label="MajorUnitSymbol:" @bind-Value="Currency.MajorUnitSymbol" />
+                <MyPropertyEditor TValue="string" Id="minorunitsymbol" Label="MinorUnitSymbol:" @bind-Value="Currency.MinorUnitSymbol" />
+                <MyPropertyEditor TValue="double" Id="ratioofminorunit" Label="RatioOfMinorUnit:" @bind-Value="Currency.RatioOfMinorUnit" />
+                <button type="submit" class="btn btn-primary">Save</button>
+            </EditForm>
+        </div>
+    </div>
+}
+
+<div>
+    <a href="/currencies">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromQuery]
+    private Guid Id { get; set; }
+
+    [SupplyParameterFromForm]
+    private Currency? Currency { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        Currency ??= await context.Currencies.FirstOrDefaultAsync(c => c.Id == Id);
+
+        if (Currency is null)
+        {
+            NavigationManager.NavigateTo("currencies");
+        }
+    }
+
+    private async Task UpdateCurrency()
+    {
+        using var context = DbFactory.CreateDbContext();
+        context.Attach(Currency!).State = EntityState.Modified;
+
+        try
+        {
+            await context.SaveChangesAsync();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!CurrencyExists(Currency!.Id))
+            {
+                NavigationManager.NavigateTo("currencies");
+            }
+            else
+            {
+                throw;
+            }
+        }
+
+        NavigationManager.NavigateTo("/currencies");
+    }
+
+    private bool CurrencyExists(Guid id)
+    {
+        using var context = DbFactory.CreateDbContext();
+        return context.Currencies.Any(e => e.Id == id);
+    }
+}
