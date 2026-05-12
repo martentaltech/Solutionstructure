@@ -227,3 +227,5 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/SportMap.Web.sourcelink.json
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/t11yl2fyn1-1krfpya78j.gz
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/obj/Debug/net9.0/compressed/8yo5hbkp79-0gqggup4vd.gz
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/bin/Debug/net9.0/SportMap.Aids.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Web/bin/Debug/net9.0/SportMap.Aids.pdb

@@ -45,3 +45,5 @@
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/bin/Debug/net9.0/SportMap.Shared.dll
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/bin/Debug/net9.0/SportMap.Shared.pdb
 /Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/obj/Debug/net9.0/compressed/ljiry2d17b-335br75c3d.gz
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/bin/Debug/net9.0/SportMap.Aids.dll
+/Users/martentsimolonskas/Desktop/SportMap_Uus/Soft/SportMap.Movie/bin/Debug/net9.0/SportMap.Aids.pdb

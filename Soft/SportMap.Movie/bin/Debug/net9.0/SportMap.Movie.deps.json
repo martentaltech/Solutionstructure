@@ -442,6 +442,14 @@
       },
       "System.Memory/4.5.3": {},
       "System.Text.Json/9.0.2": {},
+      "SportMap.Aids/1.0.0": {
+        "runtime": {
+          "SportMap.Aids.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "SportMap.Data/1.0.0": {
         "runtime": {
           "SportMap.Data.dll": {
@@ -473,7 +481,8 @@
       },
       "SportMap.Shared/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "9.0.8"
+          "Microsoft.AspNetCore.Components.Web": "9.0.8",
+          "SportMap.Aids": "1.0.0"
         },
         "runtime": {
           "SportMap.Shared.dll": {
@@ -713,6 +722,11 @@
       "sha512": "sha512-4TY2Yokh5Xp8XHFhsY9y84yokS7B0rhkaZCXuRiKppIiKwPVH4lVSFD9EEFzRpXdBM5ZeZXD43tc2vB6njEwwQ==",
       "path": "system.text.json/9.0.2",
       "hashPath": "system.text.json.9.0.2.nupkg.sha512"
+    },
+    "SportMap.Aids/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "SportMap.Data/1.0.0": {
       "type": "project",
