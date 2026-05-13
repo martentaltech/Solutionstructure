@@ -8,3 +8,7 @@ public class CurrenciesRepo(SportMapDbContext c = null)
     : EfBaseRepo<SportMapDbContext, Currency>(c), ICurrenciesRepo { }
 public class CountriesRepo(SportMapDbContext c = null)
     : EfBaseRepo<SportMapDbContext, Country>(c), ICountriesRepo { }
+public class MoniesRepo(SportMapDbContext c = null)
+    : EfBaseRepo<SportMapDbContext, Money>(c), IMoniesRepo { }
+public class CountryCurrenciesRepo(SportMapDbContext c = null)
+    : EfBaseRepo<SportMapDbContext, CountryCurrency>(c), ICountryCurrenciesRepo { }
