@@ -1,39 +1,21 @@
 @page "/countries"
 @attribute [ExcludeFromInteractiveRouting]
-@using Microsoft.AspNetCore.Components.QuickGrid
-@using Microsoft.EntityFrameworkCore
-@implements IAsyncDisposable
-@inject IDbContextFactory<SportMapDbContext> DbFactory
 @inject NavigationManager NavigationManager
+@inject ICountriesRepo repo
 
-<PageTitle>Countries</PageTitle>
-
-<h1>Countries</h1>
-
-<p>
-    <a href="countries/create">Create New</a>
-</p>
-
-<QuickGrid Class="table" Items="context.Countries">
-    <PropertyColumn Property="country => country.Name" />
-    <PropertyColumn Property="country => country.Code" />
-    <PropertyColumn Property="country => country.IsoCode" />
-    <PropertyColumn Property="country => country.OfficialName" />
-
-    <TemplateColumn Context="country">
-        <a href="@($"countries/edit?id={country.Id}")">Edit</a> |
-        <a href="@($"countries/details?id={country.Id}")">Details</a> |
-        <a href="@($"countries/delete?id={country.Id}")">Delete</a>
-    </TemplateColumn>
-</QuickGrid>
+<MyIndexPage
+    TItem="Country"
+    PageTitleText="Countries"
+    EntityTitle="Countries"
+    Items="countries"
+    BasePath="countries">
+</MyIndexPage>
 
 @code {
-    private SportMapDbContext context = default!;
+    private IQueryable<Country> countries = Enumerable.Empty<Country>().AsQueryable();
 
-    protected override void OnInitialized()
-    {
-        context = DbFactory.CreateDbContext();
+    protected override async Task OnInitializedAsync() {
+        if (repo is null) return;
+        countries = (await repo.GetAsync()).AsQueryable();
     }
-
-    public async ValueTask DisposeAsync() => await context.DisposeAsync();
 }
