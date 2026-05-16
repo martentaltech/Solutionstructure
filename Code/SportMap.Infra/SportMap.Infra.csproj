@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\SportMap.Aids\SportMap.Aids.csproj" />
     <ProjectReference Include="..\SportMap.Data\SportMap.Data.csproj" />
     <ProjectReference Include="..\SportMap.Domain\SportMap.Domain.csproj" />
   </ItemGroup>
