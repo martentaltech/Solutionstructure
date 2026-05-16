@@ -16,7 +16,7 @@ builder.Services.AddScoped(sp =>
 builder.Services.AddScoped<IMoviesRepo, MoviesRepo>();
 builder.Services.AddScoped<ICountriesRepo, CountriesRepo>();
 builder.Services.AddScoped<ICurrenciesRepo, CurrenciesRepo>();
-builder.Services.AddScoped<IMoniesRepo, MoniesRepo>();
+builder.Services.AddScoped<IMoneyRepo, MoneyRepo>();
 builder.Services.AddScoped<ICountryCurrenciesRepo, CountryCurrenciesRepo>();
 
 // Add services to the container.
