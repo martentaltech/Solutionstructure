@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Code\SportMap.Aids\SportMap.Aids.csproj" />
     <ProjectReference Include="..\..\Code\SportMap.Data\SportMap.Data.csproj" />
+    <ProjectReference Include="..\..\Code\SportMap.Infra\SportMap.Infra.csproj" />
   </ItemGroup>
 
 </Project>
