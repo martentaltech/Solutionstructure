@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SportMap.Aids\SportMap.Aids.csproj" />
+  </ItemGroup>
+
 </Project>
