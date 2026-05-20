@@ -26,6 +26,10 @@ builder.Services.AddQuickGridEntityFrameworkAdapter();
 
 var app = builder.Build();
 
+using var scope = app.Services.CreateScope();
+var db = scope.ServiceProvider.GetRequiredService<SportMapDbContext>();
+await new SeedDb(db, 100).Seed();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
