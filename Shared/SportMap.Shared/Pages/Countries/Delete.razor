@@ -1,0 +1,19 @@
+@page "/countries/delete"
+@attribute [ExcludeFromInteractiveRouting]
+@inject ICountriesRepo repo
+@inject NavigationManager NavigationManager
+
+<MyDeletePage PageTitleText="Delete Country" EntityTitle="Country" Entity="country" BasePath="/countries" OnValidSubmit="deleteCountry" />
+
+@code {
+    private Country country;
+    [SupplyParameterFromQuery] private Guid Id { get; set; }
+    protected override async Task OnInitializedAsync() {
+        country = await repo.GetAsync(Id);
+        if (country is null) NavigationManager.NavigateTo("/countries");
+    }
+    private async Task deleteCountry() {
+        await repo.DeleteAsync(country!.Id);
+        NavigationManager.NavigateTo("/countries");
+    }
+}

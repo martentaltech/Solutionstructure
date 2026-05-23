@@ -1,0 +1,14 @@
+@page "/countries"
+@inject ICountriesRepo repo
+@inject NavigationManager NavigationManager
+
+<MyIndexPage
+    TItem="Country"
+    PageTitleText="Countries"
+    EntityTitle="Countries"
+    Repo="repo"
+    BasePath="countries">
+</MyIndexPage>
+
+@code {
+}
