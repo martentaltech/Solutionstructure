@@ -46,8 +46,8 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddAdditionalAssemblies(
-        typeof(SportMap.Todo.Todo).Assembly, 
-        typeof(SportMap.Movie.Pages.MoviePages.Index).Assembly
+        typeof(SportMap.Todo.Todo).Assembly,
+        typeof(SportMap.Shared.Code.UrlParams).Assembly
     );
 
 app.Run();
